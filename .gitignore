@@ -28,3 +28,6 @@ packages/
 # .NET Core
 bin/
 obj/
+
+# SQLite Database
+reservations.db
