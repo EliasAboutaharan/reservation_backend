@@ -43,11 +43,11 @@ namespace Reservation.Database
 
             // Seed Visitors (5 visiteurs)
             modelBuilder.Entity<Visitor>().HasData(
-                new Visitor { Id = 1, FirstName = "Alexandre", LastName = "Lejunior", Email = "alexandre@example.com", Phone = "0123456789", Status = "Enregistré", VisitReason = "Rendez-vous", ContactStaffId = 1 },
-                new Visitor { Id = 2, FirstName = "Élodie", LastName = "Martin", Email = "elodie@example.com", Phone = "0987654321", Status = "Enregistré", VisitReason = "Coworking", ContactStaffId = 2 },
-                new Visitor { Id = 3, FirstName = "Paul", LastName = "Dupont", Email = "paul@example.com", Phone = "0147852369", Status = "Enregistré", VisitReason = "Coworking", ContactStaffId = 1 },
-                new Visitor { Id = 4, FirstName = "Sophie", LastName = "Durand", Email = "sophie@example.com", Phone = "0172638495", Status = "Enregistré", VisitReason = "Rendez-vous", ContactStaffId = 3 },
-                new Visitor { Id = 5, FirstName = "Julien", LastName = "Moreau", Email = "julien@example.com", Phone = "0192837465", Status = "Enregistré", VisitReason = "Rendez-vous", ContactStaffId = 2 }
+                new Visitor { Id = 1, FirstName = "Alexandre", LastName = "Lejunior", Email = "alexandre@example.com", Phone = "0123456789", Status = "Enregistré", VisitReason = Reservation.Models.VisitReason.RendezVous, ContactStaffId = 1 },
+                new Visitor { Id = 2, FirstName = "Élodie", LastName = "Martin", Email = "elodie@example.com", Phone = "0987654321", Status = "Enregistré", VisitReason = Reservation.Models.VisitReason.Coworking, ContactStaffId = 2 },
+                new Visitor { Id = 3, FirstName = "Paul", LastName = "Dupont", Email = "paul@example.com", Phone = "0147852369", Status = "Enregistré", VisitReason = Reservation.Models.VisitReason.Coworking, ContactStaffId = 1 },
+                new Visitor { Id = 4, FirstName = "Sophie", LastName = "Durand", Email = "sophie@example.com", Phone = "0172638495", Status = "Enregistré", VisitReason = Reservation.Models.VisitReason.RendezVous, ContactStaffId = 3 },
+                new Visitor { Id = 5, FirstName = "Julien", LastName = "Moreau", Email = "julien@example.com", Phone = "0192837465", Status = "Enregistré", VisitReason = Reservation.Models.VisitReason.RendezVous, ContactStaffId = 2 }
             );
 
             // Seed Appointments

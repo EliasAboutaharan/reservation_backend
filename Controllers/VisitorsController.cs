@@ -35,7 +35,7 @@ namespace Reservation.Controllers
                 Phone = v.Phone,
                 Email = v.Email,
                 Status = v.Status,
-                VisitReason = v.VisitReason,
+                VisitReason = v.VisitReason?.ToString(),
                 ContactStaffId = v.ContactStaffId,
                 ContactStaffName = v.ContactStaffId.HasValue && staffDict.ContainsKey(v.ContactStaffId.Value)
                     ? staffDict[v.ContactStaffId.Value]
@@ -62,7 +62,7 @@ namespace Reservation.Controllers
                 Phone = visitor.Phone,
                 Email = visitor.Email,
                 Status = visitor.Status,
-                VisitReason = visitor.VisitReason,
+                VisitReason = visitor.VisitReason?.ToString(),
                 ContactStaffId = visitor.ContactStaffId
             };
 
